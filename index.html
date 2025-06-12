@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            width: 100dvw;
+            height: 100dvh;
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+        }
+        #wallet {
+            flex: 1;
+        }
+        div#game {
+            flex: 1;
+        }
+        img {
+            display: block;
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+            opacity: 0.3;
+        }
+
+    </style>
+</head>
+
+<body>
+    <h1>Play with Solana</h1>
+    <div>example of interact with phantom wallet from mobile browser (<a href='https://docs.phantom.com/phantom-deeplinks/deeplinks-ios-and-android'>docs</a>)</div>
+    <h2><a id="connect">Connect wallet</a></h2>
+    <div id="game">
+        <img src="splash.jpg"/>
+    </div>
+    <h2><code id="wallet"></code></h2>
+    <div>example of transaction comming soon...</div>
+    <a id="reset-data" href="/">Reset saved data</a>
+    <script type="module" src="app.ts"></script>
+</body>
+
+</html>
