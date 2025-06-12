@@ -19994,7 +19994,7 @@ function getOrCreateDappKeyPair() {
   }
 }
 function createConnectUrl(dappKeyPair) {
-  const baseURL = window.location.origin;
+  const baseURL = window.location.href;
   const params = new URLSearchParams({
     app_url: baseURL,
     dapp_encryption_public_key: esm_default2.encode(dappKeyPair.publicKey),
